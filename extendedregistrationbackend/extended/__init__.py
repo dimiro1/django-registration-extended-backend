@@ -62,13 +62,7 @@ class ExtendedBackend(DefaultBackend):
                                      user=new_user,
                                      request=request)
         return new_user
-
-    def get_form_class(self, request):
-        """
-        Return the default form class used for user registration.
-
-        """
-        return ExtendedRegistrationForm
+        
 
     def send_activation_email(self, site, profile):
         user = profile.user
