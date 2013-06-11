@@ -3,7 +3,6 @@ from django.contrib.sites.models import RequestSite
 from django.contrib.sites.models import Site
 
 from registration import signals
-from extendedregistrationbackend.forms import ExtendedRegistrationForm
 from registration.models import RegistrationProfile
 from registration.backends.default import DefaultBackend
 
